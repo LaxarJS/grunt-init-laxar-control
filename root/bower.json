@@ -1,0 +1,24 @@
+{
+   "name": "{%= artifact %}",
+   "version": "{%= version %}",
+   "description": "{%= description || artifact %}",
+   {% if( licenses.length === 0 ) { %}"private": true,{%
+      }
+      else if( licenses.length === 1 ) { %}"license": "{%= licenses[0] %}",{%
+      }
+      else { %}"licenses": [ "{%= licenses.join('", "') %}"{%
+      }
+   %}
+   "authors": [ "{%= author_name %}" ],
+   "main": "{%= artifact %}.js",
+   "moduleType": "amd",
+   "ignore": [
+      ".*",
+      "Gruntfile.js",
+      "node_modules",
+      "bower_components"
+   ],
+   "dependencies": {
+      "laxar": "^1.0.0"
+   }
+}

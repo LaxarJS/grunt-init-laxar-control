@@ -1,0 +1,5 @@
+{
+  "control.js": "{%= artifact %}.js",
+  "default.theme/control.html": "default.theme/{%= artifact %}.html",
+  "default.theme/css/control.css": "default.theme/css/{%= artifact %}.css"
+}

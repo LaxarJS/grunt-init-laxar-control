@@ -1,0 +1,7 @@
+{
+   "name": "{%= artifact %}",
+
+   "integration": {
+      "technology": "angular"
+   }
+}
